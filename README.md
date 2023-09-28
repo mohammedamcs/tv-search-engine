@@ -8,7 +8,7 @@ It utilizes the TV Maze API to fetch data about a TV show and display it's infor
 > This gif shows a brief overview of the project, and it may take a while to load!
 <img src ="./images/tv-search-engine-demo.gif">
 
-Features
+## Features
 - Search for TV shows by title
 - Display detailed information about a TV show, including its name, summary, rating, status, premiered, network and image
 - Responsive design that adapts to different screen sizes, ensuring a seamless user experience across devices
