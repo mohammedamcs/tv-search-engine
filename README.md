@@ -18,4 +18,4 @@ Built using HTML,css and js
 To clone and run this project locally, follow these steps:
 - Clone the Repository: git clone https://github.com/mohammedamcs/tv-search-engine.git
 - Navigate to the project directory: cd tv-search-engine
-- Open the yahoo.html file in your preferred web browser.
+- Open the index.html file in your preferred web browser.
