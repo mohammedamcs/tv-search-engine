@@ -1,0 +1,193 @@
+/* Strat Global Variables  */
+:root {
+    --main-background-color: #161b22;
+    --alt-background-color: #0d1117;
+    --border-radius: 6px;
+    --border-color: #30363d;
+    --green-color: #238636;
+    --green-alt-color: #2ea043;
+}
+
+/* End Global Variables  */
+
+/* Start Global Rules  */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--main-background-color);
+    font-family: sans-serif;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    margin: 20px 10px;
+}
+
+.container>div {
+    padding: 25px;
+    background-color: var(--alt-background-color);
+    border-radius: var(--border-radius);
+}
+
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: inherit;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: var(--green-color);
+    border-radius: var(--border-radius);
+}
+
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+
+/* End Global Rules  */
+
+/* Start Search Box Styling  */
+.search-box {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.search-box input {
+    outline: none;
+    flex-basis: 90%;
+    padding: 8px 12px;
+    background-color: inherit;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    caret-color: var(--green-color);
+    color: #fff;
+    font-size: 16px;
+
+}
+
+.search-box input:focus {
+    border-color: var(--green-color);
+}
+
+.search-box button {
+    background-color: var(--green-color);
+    border: none;
+    padding: 8px 16px;
+    border-radius: var(--border-radius);
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+.search-box button:hover {
+    background-color: var(--green-alt-color);
+}
+
+/* End Search Box Styling  */
+
+/* Start Content Styling  */
+.content {
+    height: calc(100vh - 180px);
+    position: relative;
+    overflow-y: auto;
+}
+
+.content .no-data {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.content .no-data img {
+    max-width: 80px;
+}
+
+.content .card {
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    display: flex;
+    overflow: hidden;
+}
+
+.content .card img {
+    width: 210px;
+}
+
+.content .card:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.content .card .info {
+    padding: 4px 12px;
+    font-size: 18px;
+}
+
+.content .card .info>div:not(:last-child) {
+    margin-bottom: 8px;
+}
+
+.content .card .info .summary span:nth-child(2) {
+    text-align: justify;
+    line-height: 1.4;
+}
+
+
+/* End Content Styling  */
+
+
+@media (max-width: 567px) {
+    
+    .content .card {
+        flex-direction: column;
+        width: 300px;
+    }
+    .content .card img {
+        width: 100%;
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 767px) {
+    .container {
+        width: 740px;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .container {
+        width: 920px;
+    }
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
