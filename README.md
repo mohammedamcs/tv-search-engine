@@ -1,6 +1,7 @@
 # TV Maze API - Search About Your Favorite Shows 
 This is a TV Show Search Engine that allows users to search for information about TV shows. 
 It utilizes the TV Maze API to fetch data about a TV show and display it's information.
+Built using HTML,css and js
 ## Overview
 <img src ="./images/tv-search-engine-overview.png">
 
